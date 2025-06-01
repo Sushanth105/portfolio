@@ -3,7 +3,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Home, UserCircle, Briefcase, FileText, Mail, Menu, X } from "lucide-react";
+import { Home, UserCircle, Briefcase, FileText, Mail, Menu, X, Smile } from "lucide-react"; // Added Smile
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 import { useState, useEffect } from "react";
@@ -47,13 +47,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center" onClick={() => setIsMobileMenuOpen(false)}>
-          {/* Using an SVG for "Sushanth" logo for a more designed feel */}
-          <svg width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" className="mr-2 h-8 w-8 text-primary">
-            <circle cx="50" cy="50" r="45" stroke="currentColor" strokeWidth="10"/>
-            <path d="M30 65 C35 50 45 45 50 45 C55 45 65 50 70 65" stroke="currentColor" strokeWidth="8" strokeLinecap="round"/>
-            <circle cx="35" cy="35" r="5" fill="currentColor"/>
-            <circle cx="65" cy="35" r="5" fill="currentColor"/>
-          </svg>
+          <Smile className="mr-2 h-8 w-8 text-primary" />
           <span className="font-headline text-2xl font-bold text-primary">Sushanth</span>
         </Link>
 
@@ -87,12 +81,7 @@ export function Navbar() {
               <div className="flex h-full flex-col">
                 <div className="flex items-center justify-between border-b p-4">
                   <Link href="/" className="flex items-center" onClick={() => setIsMobileMenuOpen(false)}>
-                     <svg width="28" height="28" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" className="mr-2 h-7 w-7 text-primary">
-                        <circle cx="50" cy="50" r="45" stroke="currentColor" strokeWidth="10"/>
-                        <path d="M30 65 C35 50 45 45 50 45 C55 45 65 50 70 65" stroke="currentColor" strokeWidth="8" strokeLinecap="round"/>
-                        <circle cx="35" cy="35" r="5" fill="currentColor"/>
-                        <circle cx="65" cy="35" r="5" fill="currentColor"/>
-                      </svg>
+                     <Smile className="mr-2 h-7 w-7 text-primary" />
                     <span className="font-headline text-xl font-bold text-primary">Sushanth</span>
                   </Link>
                   <SheetClose asChild>
