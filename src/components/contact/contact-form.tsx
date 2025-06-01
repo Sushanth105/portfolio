@@ -1,7 +1,7 @@
 // src/components/contact/contact-form.tsx
 "use client";
 
-import { useFormState, useFormStatus } from "react-dom";
+import { useActionState, useFormStatus } from "react-dom";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm, Controller } from "react-hook-form";
 import { z } from "zod";
@@ -49,7 +49,7 @@ function SubmitButton({ isSubmitting }: { isSubmitting: boolean }) {
 
 
 export function ContactForm() {
-  const [state, formAction] = useFormState(handleContactForm, initialState);
+  const [state, formAction] = useActionState(handleContactForm, initialState);
   const { toast } = useToast();
   const formRef = useRef<HTMLFormElement>(null);
 
