@@ -43,7 +43,7 @@ export default function AboutPage() {
           </CardHeader>
           <CardContent className="space-y-6 text-base leading-relaxed text-foreground/90">
             <p>
-              Hello! I'm Aura (or insert your name here!), a dedicated and versatile software developer with a strong foundation in web technologies and a keen eye for user experience. My journey into the world of tech began with a fascination for how software could solve real-world problems and connect people in meaningful ways.
+              Hello! I'm Sushanth, a dedicated and versatile software developer with a strong foundation in web technologies and a keen eye for user experience. My journey into the world of tech began with a fascination for how software could solve real-world problems and connect people in meaningful ways.
             </p>
             <p>
               Over the years, I've honed my skills in front-end and back-end development, working on diverse projects ranging from dynamic web applications to interactive user interfaces. I thrive in collaborative environments where I can contribute my expertise, learn from others, and push the boundaries of what's possible with code.
@@ -61,8 +61,8 @@ export default function AboutPage() {
            <Card className="shadow-lg hover:shadow-xl transition-shadow">
             <CardHeader>
                 <CardTitle className="text-2xl flex items-center">
-                <Image src="https://placehold.co/150x150.png" alt="Aura's Portrait" width={100} height={100} className="rounded-full mr-4 border-2 border-primary p-1" data-ai-hint="professional portrait" />
-                 <span>Aura Example</span>
+                <Image src="https://placehold.co/150x150.png" alt="Sushanth's Portrait" width={100} height={100} className="rounded-full mr-4 border-2 border-primary p-1" data-ai-hint="professional portrait" />
+                 <span>Sushanth Example</span>
                 </CardTitle>
                  <CardDescription>Software Developer & Designer</CardDescription>
             </CardHeader>

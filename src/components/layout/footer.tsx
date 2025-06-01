@@ -9,7 +9,7 @@ export function Footer() {
         <div className="flex items-center">
           <Code className="h-5 w-5 mr-2 text-primary" />
           <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} Aura Portfolio. Crafted with Next.js & Tailwind CSS.
+            &copy; {new Date().getFullYear()} Sushanth Portfolio. Crafted with Next.js & Tailwind CSS.
           </p>
         </div>
         <div className="flex space-x-4">

@@ -47,14 +47,14 @@ export function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center" onClick={() => setIsMobileMenuOpen(false)}>
-          {/* Using an SVG for "Aura" logo for a more designed feel */}
+          {/* Using an SVG for "Sushanth" logo for a more designed feel */}
           <svg width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" className="mr-2 h-8 w-8 text-primary">
             <circle cx="50" cy="50" r="45" stroke="currentColor" strokeWidth="10"/>
             <path d="M30 65C35 55 45 50 50 50C55 50 65 55 70 65" stroke="currentColor" strokeWidth="8" strokeLinecap="round"/>
             <circle cx="35" cy="35" r="5" fill="currentColor"/>
             <circle cx="65" cy="35" r="5" fill="currentColor"/>
           </svg>
-          <span className="font-headline text-2xl font-bold text-primary">Aura</span>
+          <span className="font-headline text-2xl font-bold text-primary">Sushanth</span>
         </Link>
 
         <nav className="hidden md:flex items-center space-x-1">
@@ -93,7 +93,7 @@ export function Navbar() {
                         <circle cx="35" cy="35" r="5" fill="currentColor"/>
                         <circle cx="65" cy="35" r="5" fill="currentColor"/>
                       </svg>
-                    <span className="font-headline text-xl font-bold text-primary">Aura</span>
+                    <span className="font-headline text-xl font-bold text-primary">Sushanth</span>
                   </Link>
                   <SheetClose asChild>
                     <Button variant="ghost" size="icon" aria-label="Close menu">

@@ -5,7 +5,7 @@ import { Footer } from '@/components/layout/footer';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Aura Portfolio',
+  title: 'Sushanth Portfolio',
   description: 'A personal portfolio showcasing skills and projects.',
   icons: {
     icon: '/favicon.ico', // Example, ensure favicon exists if you specify it
