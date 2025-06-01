@@ -6,9 +6,8 @@ import { PersonalizationForm } from "@/components/home/personalization-form";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Lightbulb, ArrowRight } from "lucide-react";
-import { useFormState } from "react-dom";
+import { useEffect, useState, useActionState } from "react";
 import { handlePersonalizeIntro } from "@/lib/actions";
-import { useEffect, useState } from "react";
 import Link from "next/link";
 
 const baseIntroText = "Hello! I'm a passionate developer and designer, excited to share my journey and work with you. Explore my projects and learn more about my skills.";
@@ -19,7 +18,7 @@ const initialStateForForm = {
 };
 
 export default function HomePage() {
-  const [formState, formAction] = useFormState(handlePersonalizeIntro, initialStateForForm);
+  const [formState, formAction] = useActionState(handlePersonalizeIntro, initialStateForForm);
   const [heroIntroText, setHeroIntroText] = useState(baseIntroText); 
 
   useEffect(() => {
