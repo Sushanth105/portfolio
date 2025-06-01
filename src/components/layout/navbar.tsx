@@ -50,7 +50,7 @@ export function Navbar() {
           {/* Using an SVG for "Sushanth" logo for a more designed feel */}
           <svg width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" className="mr-2 h-8 w-8 text-primary">
             <circle cx="50" cy="50" r="45" stroke="currentColor" strokeWidth="10"/>
-            <path d="M30 65C35 55 45 50 50 50C55 50 65 55 70 65" stroke="currentColor" strokeWidth="8" strokeLinecap="round"/>
+            <path d="M30 65 C35 50 45 45 50 45 C55 45 65 50 70 65" stroke="currentColor" strokeWidth="8" strokeLinecap="round"/>
             <circle cx="35" cy="35" r="5" fill="currentColor"/>
             <circle cx="65" cy="35" r="5" fill="currentColor"/>
           </svg>
@@ -89,7 +89,7 @@ export function Navbar() {
                   <Link href="/" className="flex items-center" onClick={() => setIsMobileMenuOpen(false)}>
                      <svg width="28" height="28" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" className="mr-2 h-7 w-7 text-primary">
                         <circle cx="50" cy="50" r="45" stroke="currentColor" strokeWidth="10"/>
-                        <path d="M30 65C35 55 45 50 50 50C55 50 65 55 70 65" stroke="currentColor" strokeWidth="8" strokeLinecap="round"/>
+                        <path d="M30 65 C35 50 45 45 50 45 C55 45 65 50 70 65" stroke="currentColor" strokeWidth="8" strokeLinecap="round"/>
                         <circle cx="35" cy="35" r="5" fill="currentColor"/>
                         <circle cx="65" cy="35" r="5" fill="currentColor"/>
                       </svg>
