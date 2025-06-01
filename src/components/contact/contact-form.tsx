@@ -1,7 +1,8 @@
 // src/components/contact/contact-form.tsx
 "use client";
 
-import { useActionState, useFormStatus } from "react-dom";
+import { useFormStatus } from "react-dom";
+import { useActionState, useEffect, useRef } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm, Controller } from "react-hook-form";
 import { z } from "zod";
@@ -11,7 +12,6 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Send, Loader2, CheckCircle2 } from "lucide-react";
-import { useEffect, useRef } from "react";
 import { useToast } from "@/hooks/use-toast";
 
 const contactFormSchema = z.object({
