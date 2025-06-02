@@ -6,35 +6,11 @@ import { BlogPostCard } from "./blog-post-card";
 const blogPosts: BlogPost[] = [
   {
     id: "1",
-    title: "The Future of Web Development with AI",
+    title: "understanding he harmony in nature",
     date: "August 15, 2023",
     snippet: "Exploring how artificial intelligence is reshaping the landscape of web development, from automated coding to personalized user experiences.",
     imageUrl: "https://placehold.co/600x400.png",
     imageHint: "AI technology abstract"
-  },
-  {
-    id: "2",
-    title: "Mastering State Management in React",
-    date: "July 28, 2023",
-    snippet: "A deep dive into various state management solutions in React, including Context API, Redux, Zustand, and their use cases.",
-    imageUrl: "https://placehold.co/600x400.png",
-    imageHint: "code react abstract"
-  },
-  {
-    id: "3",
-    title: "Designing for Accessibility: A Developer's Guide",
-    date: "June 05, 2023",
-    snippet: "Practical tips and best practices for creating web applications that are accessible to everyone, including users with disabilities.",
-    imageUrl: "https://placehold.co/600x400.png",
-    imageHint: "accessibility design inclusion"
-  },
-   {
-    id: "4",
-    title: "Server Components in Next.js 14: A Paradigm Shift",
-    date: "September 02, 2023",
-    snippet: "Understanding the power and implications of React Server Components in Next.js, and how they improve performance and developer experience.",
-    imageUrl: "https://placehold.co/600x400.png",
-    imageHint: "server code cloud"
   },
 ];
 
