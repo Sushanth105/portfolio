@@ -18,10 +18,10 @@ export interface BlogPost {
   id: string;
   title:string;
   date: string; 
-  snippet: string;
+  snippet: string; // Short summary for list views
+  content: string; // Full content for the blog post page
   imageUrl?: string;
   imageHint?: string;
-  // content: string; 
   // slug: string;
 }
 

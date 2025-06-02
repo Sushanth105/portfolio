@@ -1,6 +1,5 @@
 // src/components/blog/blog-post-card.tsx
 import type { BlogPost } from "@/types";
-import Link from "next/link";
 import Image from "next/image";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -27,7 +26,6 @@ export function BlogPostCard({ post }: BlogPostCardProps) {
       )}
       <CardHeader className="pb-3">
         <CardTitle className="text-2xl font-bold font-headline leading-tight hover:text-primary transition-colors">
-          {/* Title is no longer a separate Link; clickability is handled by the parent Link wrapping the card */}
           {post.title}
         </CardTitle>
         <div className="flex items-center text-xs text-muted-foreground pt-1">
@@ -39,7 +37,6 @@ export function BlogPostCard({ post }: BlogPostCardProps) {
         <CardDescription className="text-base text-foreground/80 line-clamp-3">{post.snippet}</CardDescription>
       </CardContent>
       <CardFooter className="pt-4 border-t">
-        {/* "Read More" is no longer a separate Link; Button acts as a visual cue. tabIndex and aria-hidden for accessibility. */}
         <Button variant="link" className="p-0 h-auto text-primary hover:text-primary/80" tabIndex={-1} aria-hidden="true">
             Read More <ArrowRight className="ml-2 h-4 w-4" />
         </Button>
