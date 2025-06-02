@@ -1,6 +1,7 @@
 // src/components/blog/blog-post-list.tsx
 import type { BlogPost } from "@/types";
 import { BlogPostCard } from "./blog-post-card";
+import Link from "next/link";
 
 // Mock data for blog posts
 const blogPosts: BlogPost[] = [
@@ -21,7 +22,9 @@ export function BlogPostList() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {blogPosts.map((post) => (
-        <BlogPostCard key={post.id} post={post} />
+        <Link key={post.id} href={`/blog/${post.id}`}>
+ <BlogPostCard post={post} />
+ </Link>
       ))}
     </div>
   );
