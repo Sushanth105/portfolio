@@ -23,8 +23,8 @@ export function BlogPostList() {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {blogPosts.map((post) => (
         <Link key={post.id} href={`/blog/${post.id}`}>
- <BlogPostCard post={post} />
- </Link>
+          <BlogPostCard post={post} />
+        </Link>
       ))}
     </div>
   );
