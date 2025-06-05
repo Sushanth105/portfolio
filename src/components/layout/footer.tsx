@@ -13,10 +13,10 @@ export function Footer() {
           </p>
         </div>
         <div className="flex space-x-4">
-          <Link href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-muted-foreground transition-colors hover:text-primary">
+          <Link href="https://github.com/Sushanth105" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-muted-foreground transition-colors hover:text-primary">
             <Github className="h-5 w-5" />
           </Link>
-          <Link href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-muted-foreground transition-colors hover:text-primary">
+          <Link href="https://www.linkedin.com/in/sushanth-ganiga-78447a285/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-muted-foreground transition-colors hover:text-primary">
             <Linkedin className="h-5 w-5" />
           </Link>
           <Link href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="text-muted-foreground transition-colors hover:text-primary">
