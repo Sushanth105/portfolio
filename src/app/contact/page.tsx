@@ -38,15 +38,15 @@ export default function ContactPage() {
             <CardContent className="space-y-4 text-foreground/90">
               <div className="flex items-center">
                 <Mail className="mr-3 h-5 w-5 text-primary" />
-                <a href="mailto:youremail@example.com" className="hover:text-primary transition-colors">youremail@example.com</a>
+                <a href="mailto:veenaganiga96@gmail.com" className="hover:text-primary transition-colors">veenaganiga96@gmail.com</a>
               </div>
               <div className="flex items-center">
                 <Phone className="mr-3 h-5 w-5 text-primary" />
-                <span>+1 (555) 123-4567 (Optional)</span>
+                <span>+91 7975033992</span>
               </div>
               <div className="flex items-center">
                 <MapPin className="mr-3 h-5 w-5 text-primary" />
-                <span>Your City, Country (Optional)</span>
+                <span>Mangaluru,karnataka,india</span>
               </div>
             </CardContent>
           </Card>
@@ -56,11 +56,11 @@ export default function ContactPage() {
               <CardTitle className="text-2xl">Connect Online</CardTitle>
             </CardHeader>
             <CardContent className="flex space-x-4">
-              <Link href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"
+              <Link href="https://github.com/Sushanth105" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"
                 className="p-2 rounded-full bg-muted hover:bg-accent/20 text-muted-foreground hover:text-primary transition-all">
                 <Github className="h-6 w-6" />
               </Link>
-              <Link href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"
+              <Link href="https://www.linkedin.com/in/sushanth-ganiga-78447a285/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"
                 className="p-2 rounded-full bg-muted hover:bg-accent/20 text-muted-foreground hover:text-primary transition-all">
                 <Linkedin className="h-6 w-6" />
               </Link>
