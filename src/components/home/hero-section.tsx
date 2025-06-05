@@ -4,11 +4,10 @@
 import { useEffect, useState } from 'react';
 
 interface HeroSectionProps {
-  currentDisplayIntro: string; 
-  baseIntroText: string; // Fallback
+  introText: string;
 }
 
-export function HeroSection({ currentDisplayIntro, baseIntroText }: HeroSectionProps) {
+export function HeroSection({ introText }: HeroSectionProps) {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
@@ -30,7 +29,7 @@ export function HeroSection({ currentDisplayIntro, baseIntroText }: HeroSectionP
     <section className="text-center py-12 md:py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5 rounded-xl shadow-sm">
       <div className="container mx-auto px-4">
         <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-foreground leading-tight">
-          {currentDisplayIntro || baseIntroText}
+          {introText}
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
           I craft digital experiences that are intuitive, engaging, and impactful. Dive in to see my work and learn about my journey.

@@ -1,50 +1,7 @@
 // src/lib/actions.ts
 "use server";
 
-import { personalizeIntro as personalizeIntroFlow, type PersonalizeIntroInput } from "@/ai/flows/personalize-intro";
 import { z } from "zod";
-
-// Schema for personalization form
-const PersonalizationFormSchema = z.object({
-  visitorProfession: z.string().min(2, "Profession/interest must be at least 2 characters.").max(100, "Input is too long."),
-});
-
-export async function handlePersonalizeIntro(prevState: any, formData: FormData) {
-  try {
-    const visitorProfession = formData.get("visitorProfession");
-    const validatedFields = PersonalizationFormSchema.safeParse({
-      visitorProfession: visitorProfession,
-    });
-
-    if (!validatedFields.success) {
-      return {
-        personalizedIntro: null,
-        error: "Invalid input: " + validatedFields.error.flatten().fieldErrors.visitorProfession?.join(", "),
-      };
-    }
-
-    const input: PersonalizeIntroInput = {
-      visitorProfession: validatedFields.data.visitorProfession,
-      // This base intro text could also be a prop or fetched from a CMS in a real app
-      baseIntroText: "Hello! I'm a passionate developer and designer, excited to share my journey and work with you. Explore my projects and learn more about my skills.", 
-    };
-
-    const result = await personalizeIntroFlow(input);
-    if (result && result.personalizedIntro) {
-      return { personalizedIntro: result.personalizedIntro, error: null };
-    } else {
-      return { personalizedIntro: null, error: "AI personalization failed to generate text."}
-    }
-    
-  } catch (error) {
-    console.error("Error personalizing intro:", error);
-    return { 
-      personalizedIntro: null,
-      error: "Failed to personalize introduction. Please try again later." 
-    };
-  }
-}
-
 
 // Schema for contact form
 const ContactFormSchema = z.object({

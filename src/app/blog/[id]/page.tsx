@@ -66,7 +66,6 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1000px"
                 className="object-cover"
-                data-ai-hint={post.imageHint || "blog article"}
                 priority // Good for LCP on individual post pages
               />
             </div>

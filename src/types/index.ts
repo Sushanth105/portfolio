@@ -7,7 +7,6 @@ export interface Project {
   description: string;
   longDescription?: string; 
   imageUrl: string;
-  imageHint?: string; // For data-ai-hint on placeholder images
   technologies: string[];
   liveUrl?: string;
   repoUrl?: string;
@@ -21,7 +20,6 @@ export interface BlogPost {
   snippet: string; // Short summary for list views
   content: string; // Full content for the blog post page
   imageUrl?: string;
-  imageHint?: string;
   // slug: string;
 }
 

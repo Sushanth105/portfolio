@@ -61,7 +61,7 @@ export default function AboutPage() {
            <Card className="shadow-lg hover:shadow-xl transition-shadow">
             <CardHeader>
                 <CardTitle className="text-2xl flex items-center">
-                <Image src="https://placehold.co/150x150.png" alt="Sushanth's Portrait" width={100} height={100} className="rounded-full mr-4 border-2 border-primary p-1" data-ai-hint="professional portrait" />
+                <Image src="https://placehold.co/150x150.png" alt="Sushanth's Portrait" width={100} height={100} className="rounded-full mr-4 border-2 border-primary p-1" />
                  <span>Sushanth</span>
                 </CardTitle>
                  <CardDescription>Software Developer & Designer</CardDescription>
